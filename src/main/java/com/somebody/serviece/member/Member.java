@@ -168,7 +168,8 @@ public class Member extends CommonMethod{
 	}
 
 	public void meLessonMg(Members me) {
-
+		page = "meLessonMg";
+		this.mav.setViewName(page);
 	}
 
 	public void getLessonList(Members me) {

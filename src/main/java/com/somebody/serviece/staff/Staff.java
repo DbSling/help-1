@@ -13,6 +13,7 @@ import com.somebody.db.MapperDong;
 import com.somebody.db.MapperUone;
 import com.somebody.db.MapperYoung;
 
+import beans.Staffs;
 import kr.co.icia.plzec.services.Encryption;
 import kr.co.icia.plzec.services.ProjectUtils;
 
@@ -39,7 +40,7 @@ public class Staff extends CommonMethod{
 	private DefaultTransactionDefinition txdef;
 
 	String page = null;
-	public void backController(String sCode, Staff sf) {
+	public void backController(String sCode, Staffs sf) {
 		String gs = null;
 		String senddata = null;
 
@@ -67,32 +68,32 @@ public class Staff extends CommonMethod{
 		
 	}
 
-	public void sfMg(Staff sf) {
+	public void sfMg(Staffs sf) {
 		
 		
 	}
 
-	public void searchSfMg(Staff sf) {
+	public void searchSfMg(Staffs sf) {
 		
 		
 	}
 
-	public void getMaxSf(Staff sf) {
+	public void getMaxSf(Staffs sf) {
 		
 		
 	}
 
-	public void insSf(Staff sf) {
+	public void insSf(Staffs sf) {
 		
 		
 	}
 
-	public void modSf(Staff sf) {
+	public void modSf(Staffs sf) {
 		
 		
 	}
 
-	public void getMeMg(Staff sf) {
+	public void getMeMg(Staffs sf) {
 		
 		
 	}

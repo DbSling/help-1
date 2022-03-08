@@ -49,7 +49,7 @@
 			<option value="trainer">김한울</option>
 		</select>
 		<select name="search">
-			<option value="none">수업명</option>
+			<option value="none">-수업명-</option>
 			<option value="lesson">스피닝</option>
 			<option value="lesson">요가</option>
 		</select>

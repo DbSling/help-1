@@ -17,8 +17,10 @@ import com.somebody.serviece.staff.Staff;
 
 import beans.Centers;
 import beans.Equipments;
+import beans.Lessons;
 import beans.Members;
 import beans.Pays;
+import beans.Staffs;
 
 
 @RestController
@@ -84,52 +86,52 @@ public class AjaxController {
 	
 	//Dong
 	@RequestMapping(value = "/sfMg", method = RequestMethod.POST)
-	public void sfMg(Model model, @ModelAttribute Staff sf) {
+	public void sfMg(Model model, @ModelAttribute Staffs sf) {
 		this.sf.backController("S01", sf);
 	}
 	@RequestMapping(value = "/searchSfMg", method = RequestMethod.POST)
-	public void searchSfMg(Model model, @ModelAttribute Staff sf) {
+	public void searchSfMg(Model model, @ModelAttribute Staffs sf) {
 		this.sf.backController("S02", sf);
 	}
 	@RequestMapping(value = "/getMaxSf", method = RequestMethod.POST)
-	public void getMaxSf(Model model, @ModelAttribute Staff sf) {
+	public void getMaxSf(Model model, @ModelAttribute Staffs sf) {
 		this.sf.backController("S03", sf);
 	}
 	@RequestMapping(value = "/insSf", method = RequestMethod.POST)
-	public void insSf(Model model, @ModelAttribute Staff sf) {
+	public void insSf(Model model, @ModelAttribute Staffs sf) {
 		this.sf.backController("S04", sf);
 	}
 	@RequestMapping(value = "/modSf", method = RequestMethod.POST)
-	public void modSf(Model model, @ModelAttribute Staff sf) {
+	public void modSf(Model model, @ModelAttribute Staffs sf) {
 		this.sf.backController("S07", sf);
 	}
 	@RequestMapping(value = "/getMeMg", method = RequestMethod.POST)
-	public void getMeMg(Model model, @ModelAttribute Staff sf) {
+	public void getMeMg(Model model, @ModelAttribute Staffs sf) {
 		this.sf.backController("S09", sf);
 	}
 	
 	@RequestMapping(value = "/lessonMg", method = RequestMethod.POST)
-	public void lessonMg(Model model, @ModelAttribute Lesson ls) {
+	public void lessonMg(Model model, @ModelAttribute Lessons ls) {
 		this.ls.backController("L02",ls);
 	}
 	@RequestMapping(value = "/searchLesson", method = RequestMethod.POST)
-	public void searchLesson(Model model, @ModelAttribute Lesson ls) {
+	public void searchLesson(Model model, @ModelAttribute Lessons ls) {
 		this.ls.backController("L03",ls);
 	}
 	@RequestMapping(value = "/getLsCaList", method = RequestMethod.POST)
-	public void getLsCaList(Model model, @ModelAttribute Lesson ls) {
+	public void getLsCaList(Model model, @ModelAttribute Lessons ls) {
 		this.ls.backController("L04",ls);
 	}
 	@RequestMapping(value = "/insLsPay", method = RequestMethod.POST)
-	public void insLsPay(Model model, @ModelAttribute Lesson ls) {
+	public void insLsPay(Model model, @ModelAttribute Lessons ls) {
 		this.ls.backController("L05",ls);
 	}
 	@RequestMapping(value = "/getMaxLesson", method = RequestMethod.POST)
-	public void getMaxLesson(Model model, @ModelAttribute Lesson ls) {
+	public void getMaxLesson(Model model, @ModelAttribute Lessons ls) {
 		this.ls.backController("L06",ls);
 	}
 	@RequestMapping(value = "/insLesson", method = RequestMethod.POST)
-	public void insLesson(Model model, @ModelAttribute Lesson ls) {
+	public void insLesson(Model model, @ModelAttribute Lessons ls) {
 		this.ls.backController("L07",ls);
 	}
 	
@@ -137,20 +139,20 @@ public class AjaxController {
 	
 	//Young
 	@RequestMapping(value = "/modLesson", method = RequestMethod.POST)
-	public void modLesson(Model model, @ModelAttribute Lesson ls) {
+	public void modLesson(Model model, @ModelAttribute Lessons ls) {
 		this.ls.backController("L09",ls);
 	}
 	@RequestMapping(value = "/lsMemDetail", method = RequestMethod.POST)
-	public void lsMemDetail() {
+	public void lsMemDetail(Model model, @ModelAttribute Lessons ls) {
 		this.ls.backController("L10",ls);
 	}
 	
 	@RequestMapping(value = "/modLsSuccess", method = RequestMethod.POST)
-	public void modLsSuccess(Model model, @ModelAttribute Lesson ls) {
+	public void modLsSuccess(Model model, @ModelAttribute Lessons ls) {
 		this.ls.backController("L11",ls);
 	}
 	@RequestMapping(value = "/delLesson", method = RequestMethod.POST)
-	public void delLesson(Model model, @ModelAttribute Lesson ls) {
+	public void delLesson(Model model, @ModelAttribute Lessons ls) {
 		this.ls.backController("L12",ls);
 	}
 	@RequestMapping(value = "/goodsMg", method = RequestMethod.POST)

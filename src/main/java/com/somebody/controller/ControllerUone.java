@@ -22,7 +22,7 @@ public class ControllerUone {
 	Member me;
 	
 	
-	@RequestMapping(value = "/meLessonMg", method = RequestMethod.POST)
+	@RequestMapping(value = "/meLessonMg", method = RequestMethod.GET)
 	public void meLessonMg(Model model, @ModelAttribute Members me) {
 		this.me.backController("C07", me);
 	}
