@@ -5,6 +5,7 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
+import org.springframework.ui.Model;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.somebody.db.CommonMethod;
@@ -27,7 +28,7 @@ public class Member extends CommonMethod{
 	private MapperYoung my;
 	@Autowired
 	private MapperUone mu;
-	private ModelAndView mav;
+	
 	@Autowired
 	private ProjectUtils pu;
 	@Autowired
@@ -40,8 +41,11 @@ public class Member extends CommonMethod{
 	private DefaultTransactionDefinition txdef;
 
 	String page = null;
-
-	public void backController(String sCode, Members me) {
+	Member(){
+		mav = new ModelAndView();
+	}
+	private ModelAndView mav;
+	public void backController(String sCode, Members me , Model model) {
 		String gs = null;
 		String senddata = null;
 
@@ -68,7 +72,7 @@ public class Member extends CommonMethod{
 			
 			//회원페이지 접근
 		case "C01":
-			infoLine(me);
+			infoLine(me,model);
 			break;
 		case "C02":
 			meDtInfo(me);
@@ -168,7 +172,7 @@ public class Member extends CommonMethod{
 	}
 
 	public void meLessonMg(Members me) {
-		page = "meLessonMg";
+		String page = "meLessonMg";
 		this.mav.setViewName(page);
 	}
 
@@ -202,8 +206,10 @@ public class Member extends CommonMethod{
 
 	}
 
-	public void infoLine(Members me) {
-
+	public void infoLine(Members me , Model model) {
+		String page = "infoLine";
+		 this.mav.setViewName(page);
+		
 	}
 
 	

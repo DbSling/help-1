@@ -76,7 +76,7 @@ public class ControllerBon {
 	}
 	@RequestMapping(value = "/goMePage", method = RequestMethod.POST)
 	public void goMePage(Model model, @ModelAttribute Members me) {
-		this.me.backController("M01", me);
+		this.me.backController("M01", me, model);
 	}
 
 	

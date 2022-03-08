@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>H E L P</title>
+<script src="res/js/resource.js"></script>
 </head>
 <body onLoad = "infoLine()">
 
@@ -12,9 +13,9 @@
 	<div class = "menuContainer">
 	<section class = "menuContainer">
 	<article class="topmenu">
-	<span class="topMenu" id="meConfig" onClick="meConfig()">환경설정</span>
-	<span class="topMenu" id="getLessonMg" onClick="getLessonMg()">레슨</span>
-	<span class="topMenu" id="logOut" onClick="logOut()">로그아웃</span>
+	<input type="button" id="meConfig" value = "환경설정" onClick="meConfig()"></input>
+	<input type="button" id="meLessonMg" value = "레슨" onClick="meLessonMg()"/>
+	<input type = "button" class="topMenu" id="logOut" value ="로그아웃"onClick="logOut()"></input>
 	</article>
 	</section>
 	</div>
@@ -42,6 +43,11 @@
 	<div id="bottom">
 		<div id="list">${list }</div>
 	</div>
+<script>
 
+
+
+
+</script>
 </body>
 </html>

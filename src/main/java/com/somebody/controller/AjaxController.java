@@ -48,38 +48,38 @@ public class AjaxController {
 	}
 	@RequestMapping(value = "/meMg", method = RequestMethod.POST)
 	public void meMg(Model model, @ModelAttribute Members me) {
-		this.me.backController("M01",me);
+		this.me.backController("M01",me, model);
 	}
 
 	@RequestMapping(value = "/searchMeMg", method = RequestMethod.POST)
 	public void searchMeMg(Model model, @ModelAttribute Members me) {
-		this.me.backController("M02",me);
+		this.me.backController("M02",me, model);
 	}
 
 	@RequestMapping(value = "/meDetail", method = RequestMethod.POST)
 	public void meDetail(Model model, @ModelAttribute Members me) {
-		this.me.backController("M03",me);
+		this.me.backController("M03",me, model);
 	}
 
 	@RequestMapping(value = "/getCaList", method = RequestMethod.POST)
 	public void getCaList(Model model, @ModelAttribute Members me) {
-		this.me.backController("M04", me);
+		this.me.backController("M04", me, model);
 	}
 
 	@RequestMapping(value = "/addMember", method = RequestMethod.POST)
 	public void addMember(Model model, @ModelAttribute Members me) {
-		this.me.backController("M06",me);
+		this.me.backController("M06",me, model);
 	}
 
 	@RequestMapping(value = "/modMe", method = RequestMethod.POST)
 	public void modMe(Model model, @ModelAttribute Members me) {
-		this.me.backController("M07", me);
+		this.me.backController("M07", me, model);
 		
 	}
 
 	@RequestMapping(value = "/insInbody", method = RequestMethod.POST)
 	public void insInbody(Model model, @ModelAttribute Members me) {
-		this.me.backController("M09", me);
+		this.me.backController("M09", me, model);
 	}
 	
 	
@@ -195,45 +195,42 @@ public class AjaxController {
 	
 	
 	//UONE
-	@RequestMapping(value = "/infoLine", method = RequestMethod.POST)
-	public void infoLine(Model model, @ModelAttribute Members me) {
-		this.me.backController("C01",me);
-	}
+	
 	@RequestMapping(value = "/meDtInfo", method = RequestMethod.POST)
 	public void meDtInfo(Model model, @ModelAttribute Members me) {
-		this.me.backController("C02",me);
+		this.me.backController("C02",me, model);
 	}
 	@RequestMapping(value = "/meInbodyMg", method = RequestMethod.POST)
 	public void meInbodyMg(Model model, @ModelAttribute Members me) {
-		this.me.backController("C03", me);
+		this.me.backController("C03", me, model);
 	}
 	@RequestMapping(value = "/insTaState", method = RequestMethod.POST)
 	public void insTaState(Model model, @ModelAttribute Members me) {
-		this.me.backController("C04",me);
+		this.me.backController("C04",me, model);
 	}
 	@RequestMapping(value = "/meHealthMg", method = RequestMethod.POST)
 	public void meHealthMg(Model model, @ModelAttribute Members me) {
-		this.me.backController("C05",me);
+		this.me.backController("C05",me, model);
 	}
 	@RequestMapping(value = "/meFoodMg", method = RequestMethod.POST)
 	public void meFoodMg(Model model, @ModelAttribute Members me) {
-		this.me.backController("C06",me);
+		this.me.backController("C06",me, model);
 	}
 	@RequestMapping(value = "/getLessonList", method = RequestMethod.POST)
 	public void getLessonList(Model model, @ModelAttribute Members me) {
-		this.me.backController("C08",me);
+		this.me.backController("C08",me, model);
 	}
 	@RequestMapping(value = "/searchLsMg", method = RequestMethod.POST)
 	public void searchLsMg(Model model, @ModelAttribute Members me) {
-		this.me.backController("C09",me);
+		this.me.backController("C09",me, model);
 	}
 	@RequestMapping(value = "/insMeLesson", method = RequestMethod.POST)
 	public void insMeLesson(Model model, @ModelAttribute Members me) {
-		this.me.backController("C10",me);
+		this.me.backController("C10",me, model);
 	}
 	@RequestMapping(value = "/delMeLesson", method = RequestMethod.POST)
 	public void delMeLesson(Model model, @ModelAttribute Members me) {
-		this.me.backController("C11",me);
+		this.me.backController("C11",me, model);
 	}
 	@RequestMapping(value = "/checkMePw", method = RequestMethod.POST)
 	public void checkMePw(Model model, @ModelAttribute Members me) {
@@ -241,7 +238,7 @@ public class AjaxController {
 	}
 	@RequestMapping(value = "/modMeMg", method = RequestMethod.POST)
 	public void modMeMg(Model model, @ModelAttribute Members me) {
-		this.me.backController("C15",me);
+		this.me.backController("C15",me, model);
 	}
 	
 	

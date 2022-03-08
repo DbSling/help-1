@@ -23,7 +23,7 @@
 	<section class = "menuContainer">
 	<article class="topmenu">
 	<span class="topMenu" id="meConfig" onClick="meConfig()">환경설정</span>
-	<span class="topMenu" id="getLessonMg" onClick="getLessonMg()">레슨</span>
+	<span class="topMenu" id="getLessonMg" onClick="meLessonMg()">레슨</span>
 	<span class="topMenu" id="logOut" onClick="logOut()">로그아웃</span>
 	</article>
 	</section>
@@ -179,6 +179,8 @@ function selectDateCheck(){
 window.onload=function(){
 	selectDateCheck();
 }
+
+
 
 </script>
 

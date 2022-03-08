@@ -21,18 +21,21 @@ public class ControllerUone {
 	@Autowired
 	Member me;
 	
-	
-	@RequestMapping(value = "/meLessonMg", method = RequestMethod.GET)
+	@RequestMapping(value = "/infoLine", method = RequestMethod.GET)
+	public void infoLine(Model model, @ModelAttribute Members me) {
+		this.me.backController("C01",me, model);
+	}
+	@RequestMapping(value = "/meLessonMg", method = RequestMethod.POST)
 	public void meLessonMg(Model model, @ModelAttribute Members me) {
-		this.me.backController("C07", me);
+		this.me.backController("C07", me, model);
 	}
 	@RequestMapping(value = "/meConfig", method = RequestMethod.POST)
 	public void meConfig(Model model, @ModelAttribute Members me) {
-		this.me.backController("C12",me);
+		this.me.backController("C12",me, model);
 	}
 	@RequestMapping(value = "/delMe", method = RequestMethod.POST)
 	public void delMe(Model model, @ModelAttribute Members me) {
-		this.me.backController("C17",me);
+		this.me.backController("C17",me, model);
 	}
 	
 }

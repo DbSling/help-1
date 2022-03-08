@@ -29,6 +29,25 @@ function jstest(){
 	whatsend("meLogin", sttcode,"regedemp",true,"post");
 	}
 	
+	function meLessonMg(ctCode){
+	
+	const form = makeForm("", "meLessonMg", "POST")
+	//const ctCode = makeInputElement("hidden","ctCode",ctCode,"")
+
+	//form.appendChild(ctCode);
+      document.body.appendChild(form);
+      form.submit();
+}
+
+function meConfig(ctCode){
+	
+	const form = makeForm("", "meConfig", "POST")
+	//const ctCode = makeInputElement("hidden","ctCode",ctCode,"")
+
+	//form.appendChild(ctCode);
+      document.body.appendChild(form);
+      form.submit();
+}
 	
 function getgoodsList(action, stcode){
 	//let jsondata = [];
